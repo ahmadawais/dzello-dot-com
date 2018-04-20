@@ -3,5 +3,5 @@
 {{- if (eq (getenv "NODE_ENV") "development") -}}
 <link rel="stylesheet" type="text/css" href="/css/main-green.css" />
 {{- else -}}
-<style>{{- readFile (printf "/dist/css/main-%s.css" $themeColor) | safeCSS -}}</style>
+<style>{{- readFile (printf "/dist/css/main-green.css" $themeColor) | safeCSS -}}</style>
 {{- end }}
