@@ -1,6 +1,6 @@
 ---
 pages:
-- blog/make-reusable-hugo-components-with-shortcodes-and-data-files.md
+- blog/faster-content-reloading-for-netlify-s-victor-hugo-boilerplate.md
 hide_body: false
 is_partial: false
 fields:
