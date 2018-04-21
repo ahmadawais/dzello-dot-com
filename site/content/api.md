@@ -48,11 +48,8 @@ The [work resource](/work/index.json) returns a JSON document that contains a ke
 {
   "activities": { ... },
   "articles": { ... },
-  "jobs": { ... },
   "mentions": { ... },
-  "podcasts": { ... },
   "projects": { ... },
-  "stats": { ... },
   "talks": { ... }
 }
 ```
