@@ -3,7 +3,7 @@
     <div class="single-post-text">
       {{ if isset .Page.Params "image" }}
       <div class="title-image">
-        <a href="{{ .Permalink }}">{{ partial "cloudinary" .Page.Params.image }}</a>
+        {{ partial "cloudinary" .Page.Params.image }}
         {{ with .Page.Params.imageCaption }}
         <div class="caption">{{ . }}</div>
         {{ end }}
