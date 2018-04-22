@@ -1,13 +1,5 @@
 export default function() {
-  var width = $(window).width();
-  var height = $(window).height();
-  if(width < 840) {
-    $('.section.started').css({'height': height-30});
-  } else {
-    $('.section.started').css({'height': height-60});
-  }
-  $('.preloader').hide();
-  $('body').addClass('loaded');
+  $('.h-subtitle').show();
   $('.typed-subtitle').typed({
     stringsElement: $('.typing-subtitle'),
     loop: true

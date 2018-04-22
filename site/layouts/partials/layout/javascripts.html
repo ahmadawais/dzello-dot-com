@@ -1,4 +1,19 @@
   <script>
+    (function() {
+      var elem = document.getElementById("section-started");
+      if (elem) {
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        if (width < 840) {
+          elem.style.height =  (height - 30) + "px";
+        } else {
+          elem.style.height =  (height - 60) + "px";
+        }
+      }
+      document.body.className = "loaded";
+    })();
+  </script>
+  <script>
     setTimeout(function() {
       var myCSS = document.createElement("link");
       myCSS.rel = "stylesheet";
