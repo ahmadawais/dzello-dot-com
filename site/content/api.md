@@ -1,5 +1,5 @@
 +++
-title = "dzello.com API documentation"
+title = "API"
 weight = "45"
 description = "Documentation and resources for accessing dzello.com via the API"
 themeColor = "purple"
