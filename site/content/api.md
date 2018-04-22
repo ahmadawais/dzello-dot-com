@@ -1,7 +1,7 @@
 +++
 title = "API"
 weight = "45"
-description = "Documentation and resources for accessing dzello.com via the API"
+description = "Because everything needs an API"
 themeColor = "purple"
 
 +++

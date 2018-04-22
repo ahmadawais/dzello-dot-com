@@ -1,7 +1,7 @@
 +++
 title = "Projects"
 dataList = "projects"
-description = "A list of open source projects that Josh Dzielak has created"
+description = "Open source creations and contributions"
 weight = 50
 
 +++

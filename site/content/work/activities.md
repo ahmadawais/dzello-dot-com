@@ -1,7 +1,7 @@
 +++
 title = "Activities"
 dataList = "activities"
-description = "A list of activities that Josh Dzielak has been a part of"
+description = "I try to keep busy"
 weight = 70
 
 +++

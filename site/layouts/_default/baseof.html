@@ -19,7 +19,13 @@
               {{ block "started-content" . -}}
                 <div class="h-title glitch-effect" data-text="{{ .Page.Title }}">{{ .Page.Title }}</div>
                 <div class="h-subtitle typing-bread">
-                  <p><a href="/">Home</a> / {{ .Page.Title }}</p>
+                  <p>
+                  {{- if .Page.Description -}}
+                    {{- .Page.Description -}}
+                  {{- else -}}
+                    <a href="/">Home</a> / {{ .Page.Title }}
+                  {{- end -}}
+                  </p>
                 </div>
                 <span class="typed-bread"></span>
               {{- end }}

@@ -6,7 +6,7 @@
           <ul>
             {{ range .Site.Menus.main -}}
             <li class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (and (eq .Page.Dir $currentPage.Dir) (ne $currentPage.Dir "")) }}active{{end}}">
-              <a class="lnk" href="{{ .URL }}">{{ .Page.Title }}</a>
+              <a class="lnk" href="{{ .URL }}">{{ or .Page.Params.menu_title .Page.Title }}</a>
             </li>
             {{ end -}}
             <li><a href="#popup-subscribe" class="btn fill has-popup">Subscribe</a></li>

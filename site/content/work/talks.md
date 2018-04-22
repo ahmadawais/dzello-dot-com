@@ -1,7 +1,7 @@
 +++
 title = "Talks"
 dataList = "talks"
-description = "A list of talks that Josh Dzielak has given"
+description = "Small victories over stage fright"
 weight = 20
 
 +++

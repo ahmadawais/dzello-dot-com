@@ -1,7 +1,7 @@
 +++
 title = "Articles"
 dataList = "articles"
-description = "A list of articles that Josh Dzielak has written"
+description = "Things I've written on other sites"
 weight = 30
 
 +++
