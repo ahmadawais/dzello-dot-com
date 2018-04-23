@@ -6,6 +6,7 @@ import consulting from "./consulting";
 import initialize from "./initialize";
 import subscribe from "./subscribe";
 import search from "./search";
+import confetti from "./confetti";
 
 (function() {
   window.$ = window.jQuery = jQuery;
@@ -23,6 +24,7 @@ discuss();
 initialize();
 subscribe();
 
+window._confetti = confetti;
 window._search = search;
 
 var cl = cloudinary.Cloudinary.new( { cloud_name: "dzello"});
