@@ -5,10 +5,10 @@ export default function() {
   var DEG_TO_RAD = Math.PI / 180;
   var RAD_TO_DEG = 180 / Math.PI;
   var colors = [
-      ["#df0049", "#660671"],
-      ["#00e857", "#005291"],
-      ["#2bebbc", "#05798a"],
-      ["#ffd200", "#b06c00"]
+      ["#FF4081", "#9C27B0"],
+      ["#4CAF50", "#303F9F"],
+      ["#ffd200", "#f26b38"],
+      ["#e84a5f", "#FF4081"]
   ];
 
   function Vector2(_x, _y) {
