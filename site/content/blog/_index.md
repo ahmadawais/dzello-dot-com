@@ -1,7 +1,7 @@
 +++
 menu = "main"
 title = "Blog"
-description = "Learn about developer tools and developer relations"
+description = "Thoughts on developer tools and developer relations"
 weight = "20"
 
 +++
