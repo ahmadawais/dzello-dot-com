@@ -16,7 +16,7 @@ title = "Articles"
 data = "articles"
 type = "article"
 icon = "ion-edit"
-image = "josh-dzielak-algolia-search-party-2017"
+image = "john-edgar-josh-dzielak-justin-johnson-london-2014"
 categories = [
   "Community",
   "Search",
@@ -28,7 +28,7 @@ title = "Mentions"
 data = "mentions"
 type = "mention"
 icon = "ion-at"
-image = "john-edgar-josh-dzielak-justin-johnson-london-2014"
+image = "mentions/bootcamp-grads-job-portraits-2014.jpg"
 categories = [
   "Blogs",
   "Podcasts",
@@ -40,7 +40,7 @@ title = "Activities"
 data = "activities"
 type = "activity"
 icon = "ion-fireball"
-image = "josh-dzielak-frisbee-2015"
+image = "activities/keencon-keen-io-galvanize-2014"
 categories = [
   "Work",
   "Play"

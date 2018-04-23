@@ -8,25 +8,6 @@ image_url = "articles/stackshare-algolia-latency.png"
 url = "https://stackshare.io/algolia/how-algolia-reduces-latency-for-21b-searches-per-month"
 
 [[ article ]]
-title = "Building for developers—a tour of new features and resources in 2017"
-category = "Community"
-date = "2017-06-07"
-tag = "devrel"
-location = "Algolia Blog"
-location_url = "https://blog.algolia.com/"
-image_url = "articles/algolia-community-article.png"
-url = "https://blog.algolia.com/algolia-building-for-developers-2017/"
-
-[[ article ]]
-title = "Demystifying enter key submission for React forms with multiple buttons"
-category = "Software"
-date = "2017-02-19"
-location = "dzello.com"
-location_url = "https://dzello.com/"
-url = "/blog/2017/02/19/demystifying-enter-key-submission-react-forms-multiple-buttons/"
-hidden = true
-
-[[ article ]]
 title = "How I got into developer advocacy"
 category = "Community"
 date = "2017-03-15"
@@ -35,6 +16,16 @@ location = "Medium"
 location_url = "https://medium.com/@dzello"
 image_url = "articles/dzello-elof-london.png"
 url = "https://medium.com/@dzello/how-i-got-into-developer-advocacy-93bad1678a67"
+
+[[ article ]]
+title = "Building for developers—a tour of new features and resources in 2017"
+category = "Community"
+date = "2017-06-07"
+tag = "devrel"
+location = "Algolia Blog"
+location_url = "https://blog.algolia.com/"
+image_url = "articles/algolia-community-article.png"
+url = "https://blog.algolia.com/algolia-building-for-developers-2017/"
 
 [[ article ]]
 title = "Comparing Algolia and Elasticsearch Part 1: End-to-end Latency"
@@ -145,3 +136,13 @@ location = "dzello.com"
 location_url = "https://dzello.com/"
 url = "/blog/2012/05/03/releasing-mongoid-alize-comprehensive-field-denormalization-for-mongoid/"
 hidden = true
+
+[[ article ]]
+title = "Demystifying enter key submission for React forms with multiple buttons"
+category = "Software"
+date = "2017-02-19"
+location = "dzello.com"
+location_url = "https://dzello.com/"
+url = "/blog/2017/02/19/demystifying-enter-key-submission-react-forms-multiple-buttons/"
+hidden = true
+
