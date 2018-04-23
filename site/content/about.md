@@ -10,8 +10,8 @@ I'm Josh Dzielak a.k.a *dzello*. The "dz" is pronounced [dʒ], like the "j" in "
 '''
 images = [
   "josh-dzielak-grand-palais-2018",
-  "josh-dzielak-heavybit-devguild-2015",
-  "josh-dzielak-laptop-2017"
+  "josh-dzielak-laptop-2017",
+  "josh-dzielak-frisbee-2015",
 ]
 themeColor = "pink"
 +++
