@@ -2,6 +2,7 @@
   <div class="section photo">
     <div class="content">
       {{ partial "cloudinary" (index .Params.images 0) }}
+      <div class="caption">{{ index .Params.imageCaptions 0 }}</div>
     </div>
   </div>
   <div class="section">
@@ -28,6 +29,7 @@
   <div class="section photo">
     <div class="content">
       {{ partial "cloudinary" (index .Params.images 1) }}
+      <div class="caption">{{ index .Params.imageCaptions 1 }}</div>
     </div>
   </div>
   <div class="section">
