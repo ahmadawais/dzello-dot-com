@@ -27,22 +27,6 @@ const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
-// Use hugo for watching instead of gulp/browsersync
-gulp.task("hugo-server", (cb) => {
-  const args = ["server"].concat(hugoArgsDefault).concat(["-w", "-p", "3000", "--disableFastRender"]);
-  if (process.env.HUGO_PREVIEW) {
-    args.push(...hugoArgsPreview);
-  }
-  process.env.NODE_ENV = "development";
-  return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
-    if (code === 0) {
-      cb();
-    } else {
-      cb("Hugo build failed");
-    }
-  });
-});
-
 // Build/production tasks
 gulp.task("build", ["css", "js"], (cb) => buildSite(cb, [], "production"));
 gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
@@ -96,7 +80,17 @@ gulp.task("server-browsersync", ["hugo", "css", "js", "watch-assets"], () => {
 });
 
 // Development server with hugo server
-gulp.task("server-hugo", ["hugo-server", "css", "js", "watch-assets"]);
+gulp.task("server-hugo", ["css", "js", "watch-assets"], (cb) => {
+  browserSync.init({
+    open: false,
+    notify: false,
+    proxy: "localhost:3001",
+    ui: {
+      port: 3002
+    }
+  });
+  watchSite(cb);
+});
 
 // Task to create algolia index and push data
 gulp.task("algolia", [], (cb) => {
@@ -115,6 +109,23 @@ gulp.task("algolia", [], (cb) => {
     cb(e);
   });
 });
+
+/*
+* Run hugo in watch mode
+*/
+function watchSite(cb, options = {}, environment = "development") {
+  const args = ["server"].concat(hugoArgsDefault).concat(options).concat(["-w", "-p", "3001", "--disableFastRender"]);
+
+  process.env.NODE_ENV = environment;
+
+  return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+    if (code === 0) {
+      cb();
+    } else {
+      cb("Hugo process exited");
+    }
+  });
+}
 
 /**
  * Run hugo and build the site
