@@ -56,7 +56,7 @@ return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
 
 As the amount of content for your static site grows, however, this method might not build changes as fast as you want. Each new hugo process has to read all the content from disk and the time to do that increases as your site grows. For my site of around 90 pages, the rebuilding didn't quite feel instant anymore.
 
-There is an easy way to make this process faster and more efficient. The trick is not to launch a new Hugo process (which does a full rebuild) on every change, but instead to use Hugo's built-in ability to serve & watch files with incremental rebuilds.
+There is an easy way to make this process faster and more efficient. The trick is not to launch a new Hugo process (which does a full rebuild) on every change, but instead to use Hugo's built-in ability to serve & watch files with incremental rebuilds, also known as [Fast Render Mode](https://gohugo.io/news/0.30-relnotes/).
 
 Hugo has a `server` subcommand that runs a built-in HTTP server and accepts a `-w` flag that watches for underlying files. As the Hugo docs mention, this has [performance advantages](https://gohugo.io/commands/hugo_server/):
 
