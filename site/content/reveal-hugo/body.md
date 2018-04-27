@@ -28,7 +28,7 @@ Create multiple presentations, one for each section in `content`.
 
 # reveal-hugo
 
-Use the `fragment` shortcode to make content appear in sequence.
+Use the `fragment` shortcode to make content appear incrementally.
 
 ```
 {{%/* fragment */%}} One {{%/* /fragment */%}}
