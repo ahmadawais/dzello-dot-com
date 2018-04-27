@@ -1,4 +1,4 @@
-{{ $href := (or .work.github_url .work.glitch_url) }}
+{{ $href := (or .work.site_url .work.github_url .work.glitch_url) }}
 <div class="box-item f-{{ .work.category}}">
   <div class="image">
     <a target="_blank" href="{{ $href }}">

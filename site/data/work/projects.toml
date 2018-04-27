@@ -1,4 +1,12 @@
 [[ project ]]
+title = "reveal-hugo"
+category = "Frontend"
+description = "A Hugo theme for creating Reveal.js presentations."
+year = "2018"
+site_url = "https://dzello.com/reveal-hugo/"
+github_url = "https://github.com/dzello/reveal-hugo"
+
+[[ project ]]
 title = "discourse-algolia"
 category = "Search"
 description = "A Discourse plugin that adds Algolia indexing and search."
@@ -11,7 +19,6 @@ title = "discourse-webhook-collector"
 category = "APIs"
 description = "Listen to Discourse events and send to other APIs using webtask.io."
 year = "2017"
-video_url = "https://vimeo.com/223525087"
 github_url = "https://github.com/algolia/discourse-webhook-collector"
 
 [[ project ]]
@@ -20,7 +27,6 @@ category = "Search"
 description = "A boilerplate for building desktop React InstantSearch apps with Electron."
 year = "2016"
 github_url = "https://github.com/algolia/instantsearch-electron"
-video_url = "https://www.youtube.com/watch?v=Dj5qF0ki6BY"
 
 [[ project ]]
 title = "keen-gem"
@@ -75,7 +81,6 @@ description = "Search historical US presidential speeches, powered by Algolia."
 year = "2016"
 site_url = "http://dzello.github.io/oval-quotes/"
 github_url = "https://github.com/dzello/oval-quotes"
-video_url = "https://www.youtube.com/watch?v=xZTNzNjwl3w"
 
 [[ project ]]
 title = "Dashboards by Keen IO"
