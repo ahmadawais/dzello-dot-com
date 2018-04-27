@@ -46,6 +46,7 @@ googleAnalytics = "UA-24132749-1"
 themeColor = "blue"
 opensearch_short_name = "dzello.com"
 opensearch_description = "Search for articles about developer relations on dzello.com"
+reveal_theme = "solarized"
 
 [params.algolia]
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink", "content", "section", "path", "kind", "readingtime", "type", "weight", "url", "wordcount", "draft"]
