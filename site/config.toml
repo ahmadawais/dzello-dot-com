@@ -68,3 +68,9 @@ baseName = "opensearch"
 isPlainText = true
 mediaType = "application/xml"
 notAlternative = true
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+

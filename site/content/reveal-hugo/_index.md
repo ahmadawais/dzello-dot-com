@@ -1,6 +1,6 @@
 +++
 title = "reveal-hugo example presentation"
-type = "reveal"
+outputs = ["Reveal"]
 +++
 
 # reveal-hugo

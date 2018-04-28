@@ -26,8 +26,7 @@
     <![endif]-->
   </head>
   <body>
-    {{ block "main" . }}
-    {{ end }}
+    {{ block "main" . }}{{ end }}
     <script src="{{ "reveal/lib/js/head.min.js" | relURL }}"></script>
     <script src="{{ "reveal/js/reveal.js" | relURL }}"></script>
     <script>
@@ -43,7 +42,7 @@
           { src: '{{ "reveal/lib/js/classList.js" | relURL }}', condition: function() { return !document.body.classList; } },
           { src: '{{ "reveal/plugin/markdown/marked.js" | relURL }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ "reveal/plugin/markdown/markdown.js" | relURL }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          // { src: '{{ "reveal/plugin/highlight/highlight.js" | relURL }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ "reveal/plugin/highlight/highlight.js" | relURL }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ "reveal/plugin/search/search.js" | relURL }}', async: true },
           { src: '{{ "reveal/plugin/zoom-js/zoom.js" | relURL }}', async: true },
           { src: '{{ "reveal/plugin/notes/notes.js" | relURL }}', async: true }

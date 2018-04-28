@@ -1,5 +1,6 @@
 +++
 weight = 20
+outputs = ["Reveal"]
 +++
 
 # reveal-hugo
