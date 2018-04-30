@@ -89,7 +89,7 @@ gulp.task("server-hugo", ["css", "js", "watch-assets"], (cb) => {
       port: 3002
     }
   });
-  watchSite(cb);
+  watchSite(cb, hugoArgsPreview);
 });
 
 // Task to create algolia index and push data
