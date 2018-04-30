@@ -1,15 +1,10 @@
 +++
 weight = 20
-outputs = ["Reveal"]
 +++
-
-# reveal-hugo
 
 Content for the root presentation lives in `content/_index.md` and `content/home`.
 
 ---
-
-# reveal-hugo
 
 Content files are ordered by `weight` when added to the presentation.
 
@@ -21,15 +16,16 @@ weight = 20
 
 ---
 
-# reveal-hugo
+Create a presentation for any section of your site by adding this to its `_index.md`:
 
-Create multiple presentations, one for each section in `content`.
+```
+outputs = ["Reveal"]
+```
 
 ---
 
-# reveal-hugo
+**The `fragment` shortcode** makes content appear incrementally.
 
-Use the `fragment` shortcode to make content appear incrementally.
 
 ```
 {{%/* fragment */%}} One {{%/* /fragment */%}}

@@ -1,11 +1,8 @@
 +++
 weight = 10
-outputs = ["Reveal"]
 +++
 
-# reveal-hugo
-
-Multiple slides per markdown file.
+### Multiple slides per markdown file.
 
 Separate slides with `---`
 
@@ -23,8 +20,6 @@ Body 2.
 ```
 
 ---
-
-# reveal-hugo
 
 Hello!
 
