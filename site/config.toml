@@ -8,8 +8,8 @@ enableEmoji = true
 pygmentsCodeFences = true
 
 [permalinks]
-blog = "/blog/:year/:month/:day/:title/"
-thailand = "/thailand/:year/:month/:day/:title/"
+blog = "/blog/:year/:month/:day/:slug/"
+thailand = "/thailand/:year/:month/:day/:slug/"
 
 [blackfriday]
 smartypants = false
