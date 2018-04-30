@@ -3,7 +3,6 @@ categories = ["Technology"]
 date = "2018-04-21"
 image = "v1524599514/blog/netlify-victor-hugo-boilerplate"
 imageCaption = ""
-noDiscuss = false
 title = "Faster content rebuilding for Netlify's victor-hugo boilerplate"
 
 +++
