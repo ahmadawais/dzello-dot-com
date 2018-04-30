@@ -1,6 +1,6 @@
 +++
 categories = ["Technology"]
-date = "2018-04-21T00:40:49+00:00"
+date = "2018-04-21"
 image = "v1524599514/blog/netlify-victor-hugo-boilerplate"
 imageCaption = ""
 noDiscuss = false
