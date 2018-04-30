@@ -1,5 +1,6 @@
 import gulp from "gulp";
 import path from "path";
+import del from "del";
 import {spawn} from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
@@ -68,7 +69,7 @@ gulp.task("js", (cb) => {
 });
 
 // Development server with browsersync
-gulp.task("server-browsersync", ["hugo", "css", "js", "watch-assets"], () => {
+gulp.task("server-browsersync", ["clean", "hugo", "css", "js", "watch-assets"], () => {
   browserSync.init({
     server: {
       baseDir: "./site/dist"
@@ -80,7 +81,7 @@ gulp.task("server-browsersync", ["hugo", "css", "js", "watch-assets"], () => {
 });
 
 // Development server with hugo server
-gulp.task("server-hugo", ["css", "js", "watch-assets"], (cb) => {
+gulp.task("server-hugo", ["clean", "css", "js", "watch-assets"], (cb) => {
   browserSync.init({
     open: false,
     notify: false,
@@ -108,6 +109,11 @@ gulp.task("algolia", [], (cb) => {
     console.trace(e);
     cb(e);
   });
+});
+
+// Delete the generated site
+gulp.task("clean", () => {
+  return del(["./site/dist"]);
 });
 
 /*
