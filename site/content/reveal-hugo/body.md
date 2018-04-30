@@ -13,7 +13,7 @@ Content for the root presentation lives in `content/_index.md` and `content/home
 
 Content files are ordered by `weight` when added to the presentation.
 
-```toml
+```
 +++
 weight = 20
 +++

@@ -9,7 +9,7 @@ Multiple slides per markdown file.
 
 Separate slides with `---`
 
-```markdown
+```
 # Slide 1
 
 Body 1.
