@@ -1,6 +1,12 @@
 +++
 title = "reveal-hugo features and usage"
 outputs = ["Reveal"]
+[reveal_hugo]
+custom_theme = "themes/dzello.css"
+margin = 0.2
+highlight_theme = "color-brewer"
+transition = "slide"
+transition_speed = "fast"
 +++
 
 # reveal-hugo
