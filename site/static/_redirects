@@ -1,2 +1,2 @@
 # Optional: Redirect default Netlify subdomain to primary domain
-http://dzello.netlify.com/* http://dzello.com/:splat 301!
+https://dzello.netlify.com/* https://dzello.com/:splat 301!
