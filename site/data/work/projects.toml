@@ -3,7 +3,7 @@ title = "reveal-hugo"
 category = "Frontend"
 description = "A Hugo theme for creating Reveal.js presentations."
 year = "2018"
-site_url = "https://dzello.com/reveal-hugo/"
+site_url = "https://themes.gohugo.io/reveal-hugo/"
 github_url = "https://github.com/dzello/reveal-hugo"
 
 [[ project ]]
